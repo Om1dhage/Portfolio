@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Styling</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            background: #C7F9CC;
+            overflow: clip;
+        }
+
+        #container {
+            display: flex;
+            width: 100vw;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            appearance: none;
+            font-weight: bold;
+            font-size: large;
+            flex: 1 1 0;
+            background-color: #80ED99;
+            text-align: center;
+            padding: 20px 0;
+            box-sizing: border-box;
+            margin: 0;
+            color: #004E64;
+            transition: all 0.5s ease;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        input[type="radio"]:hover {
+            transform: scale(1.1);
+            color: #0B2545;
+        }
+
+        input[type="radio"]:checked {
+            border-bottom: 3px solid #38A3A5;
+        }
+
+        #portfolio::before {
+            content: "Portfolio";
+        }
+
+        #home::before {
+            content: "Home";
+        }
+
+        #about::before {
+            content: "About";
+        }
+
+        #contact::before {
+            content: "Contact";
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input type="radio" name="option" id="portfolio" checked>
+        <input type="radio" name="option" id="home">
+        <input type="radio" name="option" id="about">
+        <input type="radio" name="option" id="contact">
+    </div>
+</body>
+</html>

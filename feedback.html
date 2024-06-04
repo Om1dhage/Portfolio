@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            /* background-color: black; */
+            background-image: url("feedbackBG1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1,
+        h4 {
+            text-align: center;
+        }
+
+        .form_heading {
+            background-color: rgb(201, 199, 199);
+            color: black;
+            /* background-image: url("3d_header.jpg"); */
+            /* padding-bottom: 1px; */
+            border-radius: 10px;
+        }
+
+        .form_container {
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* width: 86vw; */
+            color: blue;
+            height: 120vh;
+            margin-top: 40px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .form_content {
+            width: 80vw;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        textarea {
+            width: 100%;
+            height: 30vh;
+            padding: 5px;
+            box-sizing: border-box;
+            outline: none;
+            resize: none;
+        }
+
+        /* CSS */
+        .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-85:before {
+            content: "";
+            background: linear-gradient(45deg,
+                    #ff0000,
+                    #ff7300,
+                    #fffb00,
+                    #48ff00,
+                    #00ffd5,
+                    #002bff,
+                    #7a00ff,
+                    #ff00c8,
+                    #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        .btn_feedback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            padding: 30px;
+        }
+
+        .button-28 {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #1A1A1A;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: whitesmoke;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 100%;
+            will-change: transform;
+        }
+
+        .button-28:disabled {
+            pointer-events: none;
+        }
+
+        .button-28:hover {
+            color: blue;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .button-28:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form_content">
+        <div class="form_heading">
+            <h1>Your Feedback , Our Improvement</h1>
+            <h4>"Tell us , Transform us"</h4>
+        </div>
+        <div class="form_container">
+            <form name="f1" action="get">
+                <label for="name">NAME :</label>
+                <input type="text" name="t1" placeholder="ENTER YOUR FULL NAME" required><br><br><br>
+
+                <label for="number">NUMBER :</label>
+                <input type="number" minlength="10" maxlength="10" placeholder="ENTER YOUR PHONE NUMBER"
+                    required><br><br><br>
+
+                <label for="email">EMAIL</label>
+                <input type="email" placeholder="ENTER YOUR EMAIL"><br><br><br>
+
+                <label for="date">TODAY'S DATE</label>
+                <input type="date"><br><br><br>
+
+                <label for="feedback">FEEDBACK :</label>
+                <textarea name="t2" id="" placeholder="WRITE HERE" required></textarea>
+                <br><br>
+        </div>
+        <div class="btn_feedback">
+            <button class="button-85" role="button">Send</button>
+        </div>
+        </form>
+        <a href="index.html"><button class="button-28" role="button">Go Back</button></a>
+    </div>
+</body>
+
+</html>

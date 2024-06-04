@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav_container">
+            <ul>
+                <li><a href="#portfolio" onclick="showContent('portfolio')" id="portfolio" class="nav">Om's
+                        portfolio</a></li>
+                <li><a href="#home" onclick="showContent('home')" id="home" class="nav">Home</a></li>
+                <li><a href="#about" onclick="showContent('about')" id="about" class="nav">About</a></li>
+                <li><a href="#contact" onclick="showContent('contact')" id="contact" class="nav">Contact</a></li>
+                <li><a href="#menu" onclick="showContent('menu')" id="menu" class="nav">&vellip;</a></li>
+            </ul>
+        </div>
+
+        <div class="info_container">
+            <div class="welcome">
+                <h1>Welcome To My Website</h1>
+                <h3>"where simplicity meets passion" </h3>
+                <h4>Enjoy your stay !</h4>
+            </div>
+            <ul>
+                <li><button class="button-73" role="button">Resume</button></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <div class="content_container" id="portfolio-content">
+            <div class="contentbox1">
+                <p>
+                    want to take a look on my <span class="highlight">Projects</span> ?
+                <ul>
+                    <li><a href="projects.html"><button class="button-57" role="button"><span class="text">Click
+                                    Here</span><span>PROJECTS</span></button></a></li>
+                </ul>
+                </p>
+            </div>
+            <div class="contentbox2">
+                <p>
+                    want to take a look on my <span class="highlight">Result</span> ?
+                <ul>
+                    <li><button class="button-57" role="button"><span class="text">Click Here</span><span>REPORT
+                                CARDS</span></button></li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="content_container" id="home-content">
+
+            <div class="contentbox2">
+                <p>
+                    Send me <span class="highlight">FEEDBACK</span> here !
+                <ul>
+                    <li><a href="feedback.html"><button class="button-57" role="button"><span class="text">Click
+                                    Here</span><span>feedback</span></button></a></li>
+                </ul>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="content_container" id="about-content">
+
+            <div class="contentbox1">
+                <h1 style="color: burlywood;">Introduction</h1>
+                <p>
+                    I am <span class="highlight">Om Pradip Dhage</span>. I am pursuing my graduation in <span
+                        class="highlight">Computer Science Engineering</span> branch from college jhulelal institute of
+                    technology nagpur. I know <span class="highlight">HTML5 , CSS , Javascript , C/C++ </span>
+                    programming
+                    languages and mastered HTML.
+                </p>
+            </div>
+            <div class="contentbox3">
+                <h1 style="color: burlywood;">My Hobbies</h1>
+                <p>
+                    My hobbies include a variety of activities that keeps me engaged . I have a passion for sports ,
+                    especially cricket , which I enjoy playing more than watching it. Coding is another major interest
+                    of
+                    mine; i find it rewarding to solve problems and create new projects through programming.
+                    Additionally ,
+                    I love cooking and experimenting with new recipes. Exploring different cuisines and ingredients is a
+                    creative outlet that allows me to relax and share delicious meals with others.
+                    I have a basic understanding of video editing, poster making, thumbnail creation, and logo design. I
+                    can navigate various digital media tools to create visually appealing content for different
+                    purposes. My abilities include making simple video edits, designing straightforward posters,
+                    creating basic thumbnails, and developing elementary logos. While I may not have advanced skills, I
+                    bring a willingness to learn and a dedication to improving my craft with each project. My work aims
+                    to deliver clear and effective visual communication, meeting the essential needs of any task at
+                    hand.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="content_container" id="contact-content">
+
+            <div class="number_container">
+                <p class="phone-number" id="phoneNumber">9579612946</p>
+                <button class="number_button" onclick="copyPhoneNumber()">Copy Phone Number</button>
+                <button class="number_button" onclick="alert('More info coming soon!')">More Info</button>
+                <button class="number_button" onclick="window.location.href='index.html'">Go to portfolio</button>
+            </div>
+
+        </div>
+
+
+        <div class="content_container" id="menu-content"></div>
+
+        <script src="script.js"></script>
+    </main>
+
+    <footer>
+        <div class="copyright">
+
+
+            <h5>We are absolutely thrilled that you took the time to explore our website! 🚀 Your interest means the
+                world
+                to us, and we wanted to extend our sincerest gratitude for stopping by.
+
+                At our website, we strive to create an exceptional experience for every visitor, and
+                your
+                presence adds immense value to our journey. 🌈
+
+                We are always looking to improve and provide content and services that truly resonate with our audience.
+                Your feedback is invaluable in helping us achieve this goal. 🙏
+
+                Could you spare a moment to share your thoughts with us? Whether it's suggestions for improvement,
+                praise
+                for what you loved, or anything in between, we're eager to hear from you! 📝
+
+                Feel free to reply to this email or visit our feedback page [insert feedback page link] to leave your
+                comments. Your insights will guide us in shaping a better experience for you and others.
+
+                Once again, thank you for gracing us with your presence. We're looking forward to hearing from you soon!
+
+                Warm regards,</h5>
+            <marquee behavior="" direction="">COPYRIGHT &copy; by "OM DHAGE" website created in 2024</marquee>
+        </div>
+    </footer>
+
+</body>
+
+</html>
