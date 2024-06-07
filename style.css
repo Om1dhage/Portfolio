@@ -19,9 +19,28 @@ body {
 
 header {
     /* background: rgb(242, 82, 108); */
-    background: rgb(242, 82, 108)url("head3.jpg") no-repeat fixed;
+    background: url("head3.jpg") no-repeat fixed;
     background-size: cover;
     height: 80vh;
+    animation: bgchange 50s linear infinite;
+}
+
+@keyframes bgchange {
+     0%{
+        background-image: url("head3.jpg");
+     }
+     30%{
+        background-image: url("head1.jpg");
+     }
+     60%{
+        background-image: url("head2.jpg");
+     }
+     75%{
+        background-image: url("head4.jpg");
+     }
+     85%{
+        background-image: url("head5.jpg");
+     }
 }
 
 @media (max-width:800px) {
