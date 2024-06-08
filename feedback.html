@@ -14,7 +14,7 @@
 
         body {
             /* background-color: black; */
-            background-image: url("feedbackBG1.jpg");
+            background-image: url("head5.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -42,20 +42,24 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(241, 195, 172, 0.5);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 400px;
+            width: 450px;
             color: blue;
             /* height: 520px; */
             margin-top: 40px;
-            padding: 10px;
+            padding: 5px;
             border-radius: 10px;
         }
 
         .form_content {
-            width: 90vw;
-            margin: 10px auto;
-            /* padding: 10px; */
+            width: 100%;
+            margin: 5px auto;
+            /* padding: 5px; */
+        }
+
+        .content{
+            margin-top: 40px;
         }
 
         input[type="text"],
@@ -63,7 +67,7 @@
         input[type="email"],
         input[type="date"] {
             width: 100%;
-            padding: 5px;
+            padding: 15px;
             box-sizing: border-box;
             outline-color: red;
             border-radius: 10px;
@@ -93,8 +97,9 @@
         input[type="date"]::placeholder,
         textarea::placeholder{
             color: #185201;
-            font-size: smaller;
+            font-size: medium;
         }
+
 
         /* CSS */
         .button-85 {
@@ -166,6 +171,7 @@
 
         .btn_feedback {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             align-content: center;
@@ -226,7 +232,7 @@
         </div>
         <div class="form">
             <div class="form_container">
-                <form name="f1" action="https://api.web3forms.com/submit" method="POST">
+                <form name="f1" action="https://api.web3forms.com/submit" method="POST" class="content">
                     <input type="hidden" name="access_key" value="74da3e5c-a273-4e32-a11b-50e66954a330">
                     <label for="name">NAME :</label>
                     <input type="text" name="t1" placeholder="ENTER YOUR FULL NAME" required><br><br><br>
@@ -247,10 +253,10 @@
             </div>
         </div>
         <div class="btn_feedback">
-            <button class="button-85" role="button">Send</button>
+            <button class="button-85" role="button">Send</button><br><br>
+            <a href="index.html"><button class="button-28" role="button">Go Back</button></a>
         </div>
         </form>
-        <a href="index.html"><button class="button-28" role="button">Go Back</button></a>
     </div>
 </body>
 
